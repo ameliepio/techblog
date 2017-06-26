@@ -1,4 +1,4 @@
-  !doctype html>
+<!doctype html>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
@@ -20,7 +20,11 @@
 </head>
 <body>
 <header>
-
+  <form name="chronoForm">
+    <input type="text" name="chronotime" id="chronotime" value="0:00:00:00"/>
+      <input type="button" name="startstop" value="start!" onClick="chronoStart()" />
+      <input type="button" name="reset" value="reset!" onClick="chronoReset()" />
+  </form>
 
         <div class="jumbotron jumbotron-fluid bg-info text-white">
     <div class="container">
@@ -29,15 +33,17 @@
      </div>
   </div>
         </div>
+
+  <div id="date"></div>
                 <ul id="nav"><!--
                 --><li><a href="index.html">Accueil</a></li><!--
               	--><li><a href="Nouveautés.html">Nouveautés</a></li><!--
               	--><li><a href="contact.html">Contact</a></li>
         </ul>
 </header>
-    <body>
+
       <div class="media">
-  <img class="d-flex align-self-center mr-3"src="img/nokia-157336__340.png" alt="clavier">
+  <img class="imagetel"src="img/nokia-157336__340.png" alt="clavier">
   <div class="media-body">
     <h5 class="mt-0">Un spray qui transforme vos surfaces en interface tactile </h5>
     <p>Ce spray rend les surfaces tactiles Des chercheurs de l'Université Carnegie Mellon à Pittsburgh ont mis au point un spray capable de rendre tout type de surfaces tactiles. L'invention trouve de nombreuses applications avec une ... Des chercheurs de l’Université Carnegie Mellon à Pittsburgh ont mis au point un spray capable de rendre tout type de surfaces tactile. Il suffit de recouvrir un objet avec la substance et d’installer quelques électrodes pour que cette technique baptisée Electrick fonctionne. Bien que la technologie ne soit pas aussi précise que les écrans tactiles actuels, elle trouve déjà plusieurs applications intéressantes. Elle est idéale pour les interfaces de base comme les boutons et le curseur. Dans une vidéo, l’équipe montre notamment un objet en forme de cerveau tactile. Il suffit de toucher sur une zone pour que son nom apparaisse sur un écran d’ordinateur. « La technologie est très similaire à la façon dont les écrans tactiles fonctionnent », a déclaré Yang Zhang, doctorant à l’université Carnegie. L’invention se veut particulièrement intéressante pour des objets d’une forme irrégulière. Dans ce domaine, les méthodes actuelles font appel à un système de caméra qui montre ses limites avec la luminosité. Le spray permet le contrôle tactile qui est compatible avec une large gamme de méthodes de fabrication. En impression 3D et en moulage, il faudra néanmoins que le matériau soit légèrement conducteur. Si ce n’est pas le cas, il suffit d’y ajouter des particules de carbone. Un revêtement d’une couche conductrice fera également l’affaire. Enfin, le système reste fonctionnel même avec un revêtement supplémentaire comme de la peinture.
@@ -45,7 +51,7 @@
   </div>
 </div>
 <div class="media">
-  <img class="d-flex align-self-center mr-3" src="img/mtwitter" alt="Generic placeholder image">
+  <img class="imagetel" src="img/mtwitter" alt="Generic placeholder image">
   <div class="media-body">
     <h5 class="mt-0">Twitter fait peau neuve </h5>
         <p class="mb-0"><strong>Twitter vient de déployer une nouvelle version de son interface. Elle se veut plus claire et plus épurée.</strong></br>
@@ -55,8 +61,8 @@ Twitter a donc procédé à un grand ménage de printemps pour fêter le retour 
 </div>
       <footer>
 
-        <i class="fa fa-building"></i>
-        
+  <div id="horloge"></div>
+
       </footer>  <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

@@ -109,7 +109,12 @@ body{
 font-family:'Pangolin',arial;
 }
 
+#date{
+margin-bottom: 1em;
+color:#4286f4;
+font-size:1.5em;
 
+}
 
 #nav {
   padding: 0;
@@ -126,7 +131,7 @@ font-family:'Pangolin',arial;
   padding: 0;
   margin: 0;
   text-align: center;
-  font-size: 2em
+  font-size: 2em;
 }
 
 #nav li {
@@ -141,30 +146,39 @@ font-family:'Pangolin',arial;
 .media{
 font-family:'Pangolin',arial;
 padding-top:4em;
-
-}
-.d-flex align-self-center mr-3{
-padding-top: 2em;
-
 }
 
-.mt-0{
+
+.media body{
 font-family:'Pangolin',arial;
+display: inline-block;
 font-size:20px;
+padding-left: 2em;
+padding-right:2em;
+}
+@media screen and (max-width: 767px) {
+.imagetel{
+        display:none;
+      }
+.imagetel{
+padding-top: 2em;
+}
 }
 
-.images5{
-width: 100%;
-height: auto;
-display:flex;
-flex-direction:row;
-justify-content:center;
-margin-top: 2em;
-margin-bottom: 2em;
+/* ========== Nouveautés.html =========== */
+.image2{
+  width: 30%;
+  height: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right:20em;
+  margin-left: 20em;
+  justify-content: center;
+
 }
 
-.card-columns
-{font-family:'Pangolin',arial;
+.card-columns{
+  font-family:'Pangolin',arial;
 
 }
 
@@ -174,19 +188,28 @@ margin-bottom: 2em;
       margin: 0 auto;
       width: 400px;
       /* Pour voir les limites du formulaire */
-      margin-top: 5em;
+      margin-top: 2em;
+      position: relative;
+      justify-content: center;
       padding: 1em;
-      border: 1px solid #CCC;
-      border-radius: 1em;
+
+  }
+    form div + div {
+    margin-top: 1em;
+    margin-left:auto;
+    margin-right: auto;
   }
 
-  form div + div {
-    margin-top: 1 em
-  }
+
 
 /* ========== Footer =========== */
 footer{
-margin-bottom: 5em;
+font-size: 2em;
+margin-bottom: 2em;
+margin-top: 2em;
+color:#4286f4;
+font-family:'Pangolin',arial;
+text-align:center;
 
 }
   /* ==========================================================================
